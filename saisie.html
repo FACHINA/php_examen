@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisissez vos coordonnées</title>
+</head>
+<body>
+    <form action="connexion.inc.php" method="post">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <!-- Nom -->
+            <label>Nom :</label>
+            <input type="text" name="s_nom">
+            <br>
+            <!-- Prénom -->
+            <label>Prénom :</label>
+            <input type="text" name="s_prenom">
+            <br>
+            <!-- Date de naissance -->
+            <label>Date de naissance :</label>
+            <input type="date" name="s_datenais">
+            <br>
+            <!-- Ville -->
+            <label>Ville :</label>
+            <input type="text" name="s_ville">
+            <br>
+            <!-- Sexe -->
+            <label>Sexe :</label>
+            <input type="text" name="s_sexe">
+            <br>
+            <!-- Filière -->
+            <label>Filière :</label>
+            <select type="text" name="s_filiere">
+                <option value="AGE">AGE</option>
+                <option value="AGRO">AGRO</option>
+                <option value="RIT"> RIT</option>
+                <option value="SIL">SIL</option>
+            </select>
+            <br>
+            <!-- Actions -->
+            <button type="reset">Effacer</button>
+            <button type="submit" name="enregistrer">Enregistrer</button>
+        </fieldset>
+    </form>
+</body>
+</html>
